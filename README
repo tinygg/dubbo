@@ -40,7 +40,7 @@ Source Building
     or: apt-get install git
 
     cd ~
-    wget http://www.apache.org/dist//maven/binaries/apache-maven-2.2.1-bin.tar.gz
+    wget http://archive.apache.org/dist//maven/binaries/apache-maven-2.2.1-bin.tar.gz
     tar zxvf apache-maven-2.2.1-bin.tar.gz
     vi .bash_profile
        - append: export PATH=$PATH:~/apache-maven-2.2.1/bin
