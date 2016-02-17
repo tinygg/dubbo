@@ -42,7 +42,7 @@ Source Building
     cd ~
     wget http://archive.apache.org/dist//maven/binaries/apache-maven-2.2.1-bin.tar.gz
     tar zxvf apache-maven-2.2.1-bin.tar.gz
-    vi .bash_profile
+    `vi .bash_profile`  or `vi .bashrc` (Ubuntu)
        - append: export PATH=$PATH:~/apache-maven-2.2.1/bin
     source .bash_profile
 
