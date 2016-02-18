@@ -61,14 +61,21 @@ Source Building
     Eclipse -> Menu -> File -> Import -> Exsiting Projects to Workspace -> Browse -> Finish
 
     [TEST] 
-    According to [Administrator Guide](http://dubbo.io/Administrator+Guide-zh.htm#AdministratorGuide-zh-DemoConsumerInstallation)
+    According to [Administrator Guide] 
+    http://dubbo.io/Administrator+Guide-zh.htm#AdministratorGuide-zh-DemoConsumerInstallation
 
     CASE A:[ provider <=> consumer]
 	    Do not edit any dubbo.properties(use multicast by default).
 	    Context Menu -> Run As -> Java Application:
 	    dubbo-demo-provider/src/test/java/com.alibaba.dubbo.demo.provider.DemoProvider
 	    dubbo-demo-consumer/src/test/java/com.alibaba.dubbo.demo.consumer.DemoConsumer
-
+	If the message a provider sent to a consumer is recieved by the provider itself,
+	you should modify `dubbo.registry.address=multicast://224.5.6.7:1234` to `dubbo.registry.address=multicast://224.5.6.7:1234?unicast=false`
+        in dubbo-demo-provider/src/test/resources/dubbo.properties and dubbo-demo-consumer/src/test/resources/dubbo.properties
+        
+    CASE B:[ ]
+    
+    
 
     Edit Config(Modify Your IP Address):
     dubbo-demo-provider/src/test/resources/dubbo.properties
