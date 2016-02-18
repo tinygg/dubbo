@@ -60,6 +60,15 @@ Source Building
     mvn eclipse:eclipse
     Eclipse -> Menu -> File -> Import -> Exsiting Projects to Workspace -> Browse -> Finish
 
+    [TEST] 
+    According to [Administrator Guide](http://dubbo.io/Administrator+Guide-zh.htm#AdministratorGuide-zh-DemoConsumerInstallation)
+
+    CASE A:[ provider <=> consumer]
+	    Do not edit any dubbo.properties(use multicast by default).
+	    Context Menu -> Run As -> Java Application:
+	    dubbo-demo-provider/src/test/java/com.alibaba.dubbo.demo.provider.DemoProvider
+	    dubbo-demo-consumer/src/test/java/com.alibaba.dubbo.demo.consumer.DemoConsumer
+
 
     Edit Config(Modify Your IP Address):
     dubbo-demo-provider/src/test/resources/dubbo.properties
